@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  color:#49484D;
+}
+
+
+/* -------- Navigation Bar -------- */
+
+
+div.navbar {
+  background-color: ;
+  overflow: hidden;
+  margin-right: 3vw;
+  display:flex;
+  justify-content:space-between;
+}
+
+@media only screen and (max-width: 555px) {
+  div.navbar {
+    display:block;
+  }
+}
+
+
+div.leftside{
+  margin-bottom: 1rem;
+  padding-top:1rem;
+}
+
+div.rightside{
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 555px) {
+  div.rightside {
+    text-align:center;
+
+  }
+}
+
+/*
+.navbar a{
+  color: black;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration: none;
+}*/
+
+a.nav{
+  color: #c5cac8;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a.navactive{
+  color:black;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a.titlename{
+  color: black;
+  text-align:center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.navbar a:hover {
+  background-color: ;
+  color: ;
+}
+
+
+/* -------- Title Lines -------- */
+
+
+h1{
+  margin-left: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 555px) {
+  h1 {
+    margin-left:0rem;
+  }
+}
+
+h2{
+  margin-left:3.8rem;
+  line-height: 2rem;
+  color:#4DB69F;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 555px) {
+  h2 {
+    margin-left:0rem;
+  }
+}
+
+
+/* -------- Gallery -------- */
+
+
+div.gallerycontainer{
+  display: flex;
+  flex-wrap:wrap;
+  padding: 5vw 2vw 2vw 2vw;
+
+}
+
+
+div.gallery {
+  margin:2vw;
+}
+
+div.gallery:hover {
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 5px 15px 15px 15px;
+  text-align: center;
+}
+
+p.desc{
+  color: #c5cac8;
+  font-size:0.8rem;
+  margin-top:0.3rem;
+}
+
+.responsivegallery {
+  width: calc(100%/3);
+}
+
+@media only screen and (max-width: 700px) {
+  .responsivegallery {
+    width: calc(100%/2);
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  .responsivegallery {
+    width: 100%;
+  }
+}
+
+
+/* -------- Text By Image -------- */
+
+
+div.textbyimagecontainer{
+  display: flex;
+  flex-wrap:wrap;
+  padding: 5vw 2vw 2vw 2vw;
+}
+
+div.responsivetext{
+  width: 40%;
+}
+
+div.responsiveimage{
+  width: 60%;
+}
+
+div.textleft{
+  margin:2vw;
+}
+
+div.imageright{
+  margin:2vw;
+}
+
+div.imageright img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* -------- Contact Form -------- */
+
+div.contactform{
+  padding: 5vw 2vw 2vw 2vw;
+}
+
+h1.contentheader{
+  text-align: center;
+  margin:0;
+  padding-bottom:1.5rem;
+}
+
+fieldset{
+  text-align: left;
+  width:auto;
+  border:none;
+  margin-left: 13%;
+  margin-right: 13%;
+}
+
+input.shortinput{
+  width:100%;
+  height:2rem;
+  box-sizing: border-box; /* box-sizing property allows you to include the padding and border in an element's total width and height */
+  border:0.09rem solid grey;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-family:"Montserrat";
+  padding:0.5rem;
+}
+
+input.form-email{
+  width:100%;
+  height:2rem;
+  box-sizing: border-box; /* box-sizing property allows you to include the padding and border in an element's total width and height */
+  border:0.09rem solid grey;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-family:"Montserrat";
+  padding:0.5rem;
+}
+
+input.form-subject{
+  width:100%;
+  height:2rem;
+  box-sizing: border-box; /* box-sizing property allows you to include the padding and border in an element's total width and height */
+  border:0.09rem solid grey;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-family:"Montserrat";
+  padding:0.5rem;
+}
+
+textarea.longinput{
+  width:100%;
+  height:6rem;
+  box-sizing: border-box;
+  border:0.09rem solid grey;
+  font-size: 0.9rem;
+  font-family:"Montserrat";
+  padding:0.5rem;
+}
+
+textarea.form-message{
+  width:100%;
+  height:6rem;
+  box-sizing: border-box;
+  border:0.09rem solid grey;
+  font-size: 0.9rem;
+  font-family:"Montserrat";
+  padding:0.5rem;
+  background-color: #;
+
+}
+
+input.submitbutton{
+background-color: #c78e77;
+border: none;
+color: white;
+padding: 0.55rem 1.4rem;
+margin-top: 2%;
+text-decoration: none;
+cursor: pointer;
+font-size: 0.9rem;
+font-family:"Montserrat";
+
+}
+
+input.submitbutton:hover{
+  animation-name:swell;
+  animation-duration:2s;
+  animation-iteration-count: 2;
+}
+
+@keyframes swell{
+  50%{
+    transform:scale(1.075);
+    background-color: #30a02c;
+  }
+  100%{
+    transform:scale(1);
+  }
+}
+
+div.submitwrapper{
+  text-align: center;
+  margin-top:1.5%;
+}
