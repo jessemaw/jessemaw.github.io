@@ -116,14 +116,13 @@ h2{
 }
 
 
-/* -------- Gallery -------- */
+/* -------- Work Gallery -------- */
 
 
 div.gallerycontainer{
   display: flex;
   flex-wrap:wrap;
   padding: 5vw 2vw 2vw 2vw;
-
 }
 
 
@@ -176,12 +175,35 @@ div.textbyimagecontainer{
   padding: 5vw 2vw 2vw 2vw;
 }
 
+@media only screen and (max-width: 700px) {
+  div.textbyimagecontainer {
+    flex-direction:column-reverse;
+    align-items: center;
+  }
+}
+
 div.responsivetext{
   width: 40%;
+  display:flex;
+  align-items: center;
+}/*the display and align-items are to display the text vertically in the div*/
+
+@media only screen and (max-width: 700px) {
+  div.responsivetext {
+    width: 80%;
+
+  }
 }
 
 div.responsiveimage{
   width: 60%;
+}
+
+@media only screen and (max-width: 700px) {
+  div.responsiveimage {
+    width: 80%;
+
+  }
 }
 
 div.textleft{
@@ -195,6 +217,72 @@ div.imageright{
 div.imageright img {
   width: 100%;
   height: auto;
+}
+
+img.doubleimageright{
+  padding-top:4vw;
+}
+
+ul{
+  margin-left:2vw;
+
+}
+
+/* -------- Image Only -------- */
+
+div.imageonlycontainer{
+  display: flex;
+  flex-wrap:wrap;
+  padding: 5vw 2vw 2vw 2vw;
+}
+
+div.imagecenter{
+margin:2vw;
+}
+
+img.imagecenter  {
+width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+@media only screen and (max-width: 555px) {
+  img.imagecenter {
+width:100%;
+}
+}
+
+/* -------- Text Only -------- */
+
+div.textonlycontainer{
+  display: flex;
+  flex-wrap:wrap;
+  padding: 5vw 2vw 2vw 2vw;
+}
+
+div.textcenter{
+margin:2vw;
+}
+
+h1.textonlycontentheader{
+  text-align: center;
+  margin:auto;
+  padding-bottom:1.5rem;
+}
+
+p.textcenter  {
+width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+line-height:1.5rem;
+}
+
+@media only screen and (max-width: 555px) {
+  img.textcenter {
+width:100%;
+}
 }
 
 
@@ -221,60 +309,67 @@ fieldset{
 input.shortinput{
   width:100%;
   height:2rem;
-  box-sizing: border-box; /* box-sizing property allows you to include the padding and border in an element's total width and height */
-  border:0.09rem solid grey;
+  border:0.09rem solid #49484D;
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
   font-family:"Montserrat";
   padding:0.5rem;
+  border-radius:4px;
 }
 
 input.form-email{
   width:100%;
   height:2rem;
   box-sizing: border-box; /* box-sizing property allows you to include the padding and border in an element's total width and height */
-  border:0.09rem solid grey;
+  border:0.09rem solid #49484D;
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
   font-family:"Montserrat";
   padding:0.5rem;
+  border-radius:4px;
+
 }
 
 input.form-subject{
   width:100%;
   height:2rem;
   box-sizing: border-box; /* box-sizing property allows you to include the padding and border in an element's total width and height */
-  border:0.09rem solid grey;
+  border:0.09rem solid #49484D;
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
   font-family:"Montserrat";
   padding:0.5rem;
+  border-radius:4px;
+
 }
 
 textarea.longinput{
   width:100%;
   height:6rem;
   box-sizing: border-box;
-  border:0.09rem solid grey;
+  border:0.09rem solid #49484D;
   font-size: 0.9rem;
   font-family:"Montserrat";
   padding:0.5rem;
+  border-radius:4px;
+
 }
 
 textarea.form-message{
   width:100%;
-  height:6rem;
+  height:10rem;
   box-sizing: border-box;
-  border:0.09rem solid grey;
+  border:0.09rem solid #49484D;
   font-size: 0.9rem;
   font-family:"Montserrat";
   padding:0.5rem;
   background-color: #;
+  border-radius:4px;
 
 }
 
 input.submitbutton{
-background-color: #c78e77;
+background-color: #4DB69F/*#c78e77*/;
 border: none;
 color: white;
 padding: 0.55rem 1.4rem;
