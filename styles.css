@@ -44,17 +44,8 @@ div.rightside{
 @media only screen and (max-width: 555px) {
   div.rightside {
     text-align:center;
-
   }
 }
-
-/*
-.navbar a{
-  color: black;
-  text-align:center;
-  padding: 14px 16px;
-  text-decoration: none;
-}*/
 
 a.nav{
   color: #c5cac8;
@@ -65,7 +56,7 @@ a.nav{
 }
 
 a.navactive{
-  color:black;
+  color:#49484D;
   text-align:center;
   padding: 14px 16px;
   text-decoration: none;
@@ -400,4 +391,87 @@ input.submitbutton:hover{
 div.submitwrapper{
   text-align: center;
   margin-top:1.5%;
+}
+
+
+/* -------- Footer -------- */
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 5rem;    }
+
+.footer-container {
+  position: absolute;
+  bottom:0;
+  width:100vw;
+  height: 5rem;
+  display:flex;
+  align-items: center;
+}
+
+div.footercenter{
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  }
+  /* Remember: HTML <img> elements are inline level elements, so they are affected by the text-align property. Apply the property to the div containing the image. */
+
+img.linkedinicon{
+  width:1rem;
+  height: auto;
+  margin-bottom:0.5rem;
+  margin-left: 0.25rem;
+  margin-right:0.25rem;
+}
+
+img.behanceicon{
+  width:1.5rem;
+  height: auto;
+  margin-bottom:0.5rem;
+  margin-left: 0.25rem;
+  margin-right:0.25rem;
+}
+
+p.footer{
+  color: #c5cac8;
+  font-size:0.8em;
+}
+
+/* -------- Footer -------- */
+
+input.submitbutton{
+background-color: #4DB69F/*#c78e77*/;
+border: none;
+color: white;
+padding: 0.55rem 1.4rem;
+margin-top: 2%;
+text-decoration: none;
+cursor: pointer;
+font-size: 0.9rem;
+font-family:"Montserrat";
+
+}
+
+
+/* -------- Resume Button -------- */
+
+
+div.resumebutton{
+}
+
+button{
+  margin:auto;
+background-color: #49484D;
+border: none;
+color: white;
+padding: .7rem 1.4rem;
+text-decoration: none;
+cursor: pointer;
+font-size: 0.9rem;
+font-family:"Montserrat";
+display:block;
 }
