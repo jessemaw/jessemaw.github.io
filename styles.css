@@ -224,7 +224,7 @@ ul{
 div.imageonlycontainer{
   display: flex;
   flex-wrap:wrap;
-  padding: 5vw 2vw 2vw 2vw;
+  padding: 0vw 2vw 7vw 2vw;
 }
 
 div.imagecenter{
@@ -474,4 +474,33 @@ cursor: pointer;
 font-size: 0.9rem;
 font-family:"Montserrat";
 display:block;
+}
+
+/* -------- App Title -------- */
+
+h1.apptitle{
+  text-align: center;
+  margin:auto;
+  padding-bottom:1.5rem;
+  padding-top:1.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 555px) {
+  h1.apptitle {
+font-size: 1.5rem;
+  }
+}
+
+h1.apptitlewithsubtitle{
+  text-align: center;
+  margin:auto;
+  padding-top:1.5rem;
+  font-family: 'Montserrat', sans-serif;
+} /*this removes the space below for when there's a subtitle*/
+
+h2.apptitle{
+  color:#c5cac8;
+  text-align: center;
+  margin:auto;
 }
