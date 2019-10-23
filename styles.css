@@ -504,3 +504,12 @@ h2.apptitle{
   text-align: center;
   margin:auto;
 }
+
+/* -------- Card Title -------- */
+
+h2.cardtitle{
+  text-align: center;
+  margin:auto;
+  color: #49484D;
+  font-weight: 700;
+}
